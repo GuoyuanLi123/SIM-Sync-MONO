@@ -957,13 +957,13 @@ if __name__ == "__main__":
         print("Get ground truth trajectory:")
         pose_optimizer.get_gt_traj()
         # Save the defaultdict to a file
-        with open('solution.pkl', 'wb') as file:
+        with open('Dataset/solution.pkl', 'wb') as file:
             pickle.dump(solution, file)
         print("Visualize camera trajectory:")
         # pose_optimizer.visCameraTraj(solution_path = 'solution.pkl')
         stats = pose_optimizer.printErr(solution)
         # Save the defaultdict to a file
-        with open('solution.pkl', 'wb') as file:
+        with open('Dataset/solution.pkl', 'wb') as file:
             pickle.dump(solution, file)
         print("Visualize camera trajectory:")
         # pose_optimizer.visCameraTraj(solution_path = 'solution.pkl')
@@ -974,7 +974,7 @@ if __name__ == "__main__":
         RPE_R.append(stats['RPE-R'])
         subopt.append(solution['relDualityGap'])
 
-        pose_optimizer.Reconstruction(solution_path = 'solution.pkl') # video
+        pose_optimizer.Reconstruction(solution_path = 'Dataset/solution.pkl') # video
         # pose_optimizer.visFilteredPointclouds(weights)
 
         # pose_optimizer.FullReconstruction(solution_path = 'solution.pkl') # full reconstruct
