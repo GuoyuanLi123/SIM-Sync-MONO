@@ -25,12 +25,12 @@ from collections import defaultdict
 #### with keyframe ####
 #######################
 class PoseOptimizerTUM(PoseOptimizer):
-    def __init__(self, gt_path="rgbd_dataset_freiburg2_xyz",\
-                    pred_path ="dataset/rgbd_dataset_freiburg2_xyz_output/dpt_beit_large_512_60-260"):
+    def __init__(self, gt_path="Dataset/rgbd_dataset_freiburg2_xyz",\
+                    pred_path ="Dataset/rgbd_dataset_freiburg2_xyz_output/dpt_beit_large_512_60-260"):
 
         super().__init__(gt_path, pred_path)
 
-        self.KeyFrame_file = 'KeyFrameTrajectory_xyz2_mono.txt'
+        self.KeyFrame_file = 'Dataset/KeyFrameTrajectory_xyz2_mono.txt'
 
         self.use_gt_flow = False # TUM does not have gt flow
         self.use_gt_depth = False
@@ -65,7 +65,7 @@ class PoseOptimizerTUM(PoseOptimizer):
 
         self.target_width, self.target_height = 640,480
 
-        self.feat_path = 'rgbd_dataset_' + self.sequence_name + '_CAPS/'
+        self.feat_path = 'Dataset/rgbd_dataset_' + self.sequence_name + '_CAPS/'
 
         rgb = self.gt_path + '/rgb/'
         rgb_files = os.listdir(rgb)
