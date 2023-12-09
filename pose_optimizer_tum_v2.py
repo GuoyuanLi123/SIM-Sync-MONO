@@ -901,14 +901,14 @@ if __name__ == "__main__":
 
         solution['num_points'] = index_point_counter
         if pose_optimizer.sequence_name == 'freiburg2_xyz':
-            with open("correspondences_points_GTSAM_xyz2.pickle", "wb") as file:
+            with open("Dataset/correspondences_points_GTSAM_xyz2.pickle", "wb") as file:
                 pickle.dump(correspondences_points, file)
-            with open('solution_GTSAM_xyz2.pickle', 'wb') as file:
+            with open('Dataset/solution_GTSAM_xyz2.pickle', 'wb') as file:
                 pickle.dump(solution, file)
         elif pose_optimizer.sequence_name == 'freiburg1_xyz':
-            with open("correspondences_points_GTSAM_xyz1.pickle", "wb") as file:
+            with open("Dataset/correspondences_points_GTSAM_xyz1.pickle", "wb") as file:
                 pickle.dump(correspondences_points, file)
-            with open('solution_GTSAM_xyz1.pickle', 'wb') as file:
+            with open('Dataset/solution_GTSAM_xyz1.pickle', 'wb') as file:
                 pickle.dump(solution, file)
 
 
