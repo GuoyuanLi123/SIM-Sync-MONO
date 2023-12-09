@@ -2,7 +2,7 @@ from SimSyncRegularized import SimSyncReg
 import numpy as np
 from scipy.stats import chi2
 import sys
-sys.path.append('/content/drive/MyDrive/EECS_442_Project/SIM-Sync-MONO-master/TEASER-plusplus/build/python/teaserpp_python')
+sys.path.append('/content/drive/MyDrive/SIM-Sync-MONO/TEASER-plusplus/build/python/teaserpp_python')
 import teaserpp_python
 
 def TEASER_SimSync(N, edges, pointclouds, scale_gt = None, reg_lambda=1):
