@@ -1,16 +1,16 @@
 # \[EECS 442 Project\] SIM-Sync-Mono
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1YOLXsb4JUOD1wt5TXB2ln78koocm-bu8?usp=sharing)
+[![Open in Colab](https://colab.research.google.com/drive/1sE0VmWCuL6HUad3yXHEZoCvJKzAvINpz?authuser=1#scrollTo=_p7km19VLzx3)
 
 This repository contains a Python implementation of Joint Depth Estimation and Certifiably Optimal Synchronization Using Learned Module, as described in the paper
 
 `Xihang Yu, Yuchen Zhou, Guoyuan Li. SIM-Sync-Mono: Joint Depth Estimation and Certifiably Optimal Synchronization Using Learned Module. EECS 442 Fall 2023`
 
-###  [Paper](https://arxiv.org/pdf/2012.05901.pdf) | [Video](https://www.youtube.com/watch?v=x-wHrYHJSm8) | [Colab](https://colab.research.google.com/drive/1YOLXsb4JUOD1wt5TXB2ln78koocm-bu8?usp=sharing)
+###  [Paper](https://arxiv.org/pdf/2012.05901.pdf) | [Video](https://www.youtube.com/watch?v=x-wHrYHJSm8) | [Colab](https://colab.research.google.com/drive/1sE0VmWCuL6HUad3yXHEZoCvJKzAvINpz?authuser=1#scrollTo=_p7km19VLzx3)
 
 We present an algorithm for estimating consistent dense depth maps and camera poses from a monocular video. We integrate a learning-based depth prior, in the form of a convolutional neural network trained for single-image depth estimation, with geometric optimization, to estimate a smooth camera trajectory as well as detailed and stable depth reconstruction.
 
-[bundle_adjustment](/img/bundle_adjustment.pdf)
+![bundle_adjustment](/img/Cover_vis.png)
 
 
 
