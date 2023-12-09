@@ -6,26 +6,20 @@ This repository contains a Python implementation of Joint Depth Estimation and C
 
 `Xihang Yu, Yuchen Zhou, Guoyuan Li. SIM-Sync-Mono: Joint Depth Estimation and Certifiably Optimal Synchronization Using Learned Module. EECS 442 Fall 2023`
 
-###  [Paper](https://arxiv.org/pdf/2012.05901.pdf) | [Video](https://www.youtube.com/watch?v=x-wHrYHJSm8) | [Colab](https://colab.research.google.com/drive/1sE0VmWCuL6HUad3yXHEZoCvJKzAvINpz?authuser=1#scrollTo=_p7km19VLzx3)
+###  [Paper](https://arxiv.org/pdf/2012.05901.pdf) | [Video](https://www.youtube.com) | [Colab](https://colab.research.google.com/drive/1sE0VmWCuL6HUad3yXHEZoCvJKzAvINpz?authuser=1#scrollTo=_p7km19VLzx3)
 
 We present an algorithm for estimating consistent dense depth maps and camera poses from a monocular video. We integrate a learning-based depth prior, in the form of a convolutional neural network trained for single-image depth estimation, with geometric optimization, to estimate a smooth camera trajectory as well as detailed and stable depth reconstruction.
 
 ![bundle_adjustment](https://drive.google.com/uc?export=view&id=10VHFFIzCttl6t5LkRXRZZ0uXv3dI9G1D)
 
 
-
-## Changelog
-
-- `[June 2021]` Released the companion Colab notebook.
-- `[June 2021]` Initial release of Robust CVD.
-
 ## Installation
 
 Please refer to the colab notebook for how to install the dependencies.
 
-## Running
+## Demo
 
-Please refer to the colab notebook for how to run the cli tool for now.
+Please refer to the colab notebook for how to run the demo.
 
 ## Result Folder Structure
 
