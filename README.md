@@ -21,38 +21,27 @@ Please refer to the colab notebook for how to install the dependencies.
 
 Please refer to the colab notebook for how to run the demo.
 
-## Result Folder Structure
+## Folder Structure
 
 ```bash
-frames.txt              # meta data about number of frames, image resolution and timestamps for each frame
-color_full/             # extracted frames in the original resolution
-color_down/             # extracted frames in the resolution for disparity estimation 
-color_down_png/      
-color_flow/             # extracted frames in the resolution for flow estimation
-flow_list.json          # indices of frame pairs to finetune the model with
-flow/                   # optical flow 
-mask/                   # mask of consistent flow estimation between frame pairs.
-vis_flow/               # optical flow visualization. Green regions contain inconsistent flow. 
-vis_flow_warped/        # visualzing flow accuracy by warping one frame to another using the estimated flow. e.g., frame_000000_000032_warped.png warps frame_000032 to frame_000000.
-depth_${model_type}/    # initial disparity estimation using the original monocular depth model before test-time training
-R_hierarchical2_${model_type}/ 
-    flow_list_0.20.json                 # indices of frame pairs passing overlap ratio test of threshold 0.2. Same content as ../flow_list.json.
-    videos/                             # video visualization of results 
-    B0.1_R1.0_PL1-0_LR0.0004_BS4_Oadam/
-        checkpoints/                    # checkpoint after each epoch
-        depth/                          # final disparity map results after finishing test-time training
-        eval/                           # intermediate losses and disparity maps after each epoch 
-        tensorboard/                    # tensorboard log for the test-time training process
+SIM-Synb-Mono/
+    utils/
+    TEASER-plusplus/
+    SimSyncRegularized.py
+    pose_optimization.py
+    TEASER_SIM_Sync.py
+    pose_optimizer_tum_v2.py
+    Dataset/
 
 ```
 
 ## Citation
 If you find our work useful in your research, please consider citing:
 ```BibTeX
-@inproceedings{kopf2021rcvd,
- title={Robust Consistent Video Depth Estimation},
- author={Kopf, Johannes and Rong, Xuejian and Huang, Jia-Bin},
- year={2021},
+@inproceedings{SIM-Sync-Mono,
+ title={SIM-Sync-Mono: Joint Depth Estimation and Certifiably Optimal Synchronization Using Learned Module},
+ author={Xihang Yu, Yuchen Zhou, Guoyuan Li},
+ year={2023},
  booktitle=IEEE/CVF Conference on Computer Vision and Pattern Recognition
 }
 ```
