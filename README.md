@@ -47,4 +47,4 @@ If you find our work useful in your research, please consider citing:
 ```
 
 ## Acknowledgements
-We also thank the authors for releasing [PyTorch](https://github.com/erikwijmans/Pointnet2_PyTorch), [MOSEK Solver](https://www.mosek.com/), [open3d](http://www.open3d.org/), [TEASER++](https://github.com/MIT-SPARK/TEASER-plusplus).
+We also thank the authors for releasing [robust-cvd](https://robust-cvd.github.io/), [PyTorch](https://github.com/erikwijmans/Pointnet2_PyTorch), [MOSEK](https://www.mosek.com/), [open3d](http://www.open3d.org/), [TEASER++](https://github.com/MIT-SPARK/TEASER-plusplus).
