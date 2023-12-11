@@ -966,7 +966,7 @@ if __name__ == "__main__":
         with open('Dataset/solution.pkl', 'wb') as file:
             pickle.dump(solution, file)
         print("Visualize camera trajectory:")
-        # pose_optimizer.visCameraTraj(solution_path = 'solution.pkl')
+        pose_optimizer.visCameraTraj(solution_path = 'solution.pkl')
 
         avg_R_err.append(stats['avg_R_err'])
         avg_t_err.append(stats['avg_t_err'])
@@ -974,7 +974,7 @@ if __name__ == "__main__":
         RPE_R.append(stats['RPE-R'])
         subopt.append(solution['relDualityGap'])
 
-        pose_optimizer.Reconstruction(solution_path = 'Dataset/solution.pkl') # video
+        # pose_optimizer.Reconstruction(solution_path = 'Dataset/solution.pkl') # video
         # pose_optimizer.visFilteredPointclouds(weights)
 
         # pose_optimizer.FullReconstruction(solution_path = 'solution.pkl') # full reconstruct
