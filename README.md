@@ -32,6 +32,7 @@ SIM-Synb-Mono/
     TEASER_SIM_Sync.py
     pose_optimizer_tum_v2.py
     Dataset/
+    visualization_results/
 
 ```
 
@@ -42,18 +43,8 @@ If you find our work useful in your research, please consider citing:
  title={SIM-Sync-Mono: Joint Depth Estimation and Certifiably Optimal Synchronization Using Learned Module},
  author={Xihang Yu, Yuchen Zhou, Guoyuan Li},
  year={2023},
- booktitle=IEEE/CVF Conference on Computer Vision and Pattern Recognition
 }
 ```
-## License
-See the [LICENSE](LICENSE) for more details.
-
-## Issues & Help
-For help or issues using Robust CVD, please submit a GitHub issue or a PR request.
-
-Before you do this, make sure you have checked [CODE_OF_CONDUCT](./CODE_OF_CONDUCT.md), [CONTRIBUTING](./CONTRIBUTING.md), [ISSUE_TEMPLATE](docs/.github/ISSUE_TEMPLATE.md), and [PR_TEMPLATE](docs/.github/PR_TEMPLATE.md).
 
 ## Acknowledgements
-Check our previous work on [Consistent Video Depth Estimation](https://github.com/facebookresearch/consistent_depth).
-
-We also thank the authors for releasing [PyTorch](https://github.com/erikwijmans/Pointnet2_PyTorch), [Ceres Solver](http://ceres-solver.org/), [OpenCV](http://opencv.org/), [Eigen](https://eigen.tuxfamily.org/), [MiDaS](https://github.com/intel-isl/MiDaS), [RAFT](https://github.com/princeton-vl/RAFT), and [detectron2](https://github.com/facebookresearch/detectron2).
+We also thank the authors for releasing [PyTorch](https://github.com/erikwijmans/Pointnet2_PyTorch), [MOSEK Solver](https://www.mosek.com/), [open3d](http://www.open3d.org/), [TEASER++](https://github.com/MIT-SPARK/TEASER-plusplus).
