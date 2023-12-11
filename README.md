@@ -1,4 +1,4 @@
-# \[EECS 442 Project\] SIM-Sync-Mono
+# \[EECS 442 Project\] SIM-Sync-Mono (Part 1: Interactive SIM-Sync)
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1sE0VmWCuL6HUad3yXHEZoCvJKzAvINpz?authuser=1#scrollTo=_p7km19VLzx3)
 
