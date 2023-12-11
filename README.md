@@ -8,7 +8,7 @@ This repository contains a Python implementation of Joint Depth Estimation and C
 
 ###  [Paper](https://arxiv.org/pdf/2012.05901.pdf) | [Video](https://www.youtube.com) | [Colab](https://colab.research.google.com/drive/1sE0VmWCuL6HUad3yXHEZoCvJKzAvINpz?authuser=1#scrollTo=_p7km19VLzx3)
 
-We present an algorithm for estimating consistent dense depth maps and camera poses from a monocular video. We integrate a learning-based depth prior, in the form of a convolutional neural network trained for single-image depth estimation, with geometric optimization, to estimate a smooth camera trajectory as well as detailed and stable depth reconstruction.
+We introduce an innovative approach for estimating camera trajectories and 3D scene structures from multiview image keypoints by utilizing a pretrained depth prediction network that efficiently separates camera pose estimation and depth fine-tuning and a SIM-Sync solver to optimally solve the structured problem of camera trajectory estimation. The approach is validated through experiments on the TUM dataset.
 
 ![bundle_adjustment](https://drive.google.com/uc?export=view&id=10VHFFIzCttl6t5LkRXRZZ0uXv3dI9G1D)
 
